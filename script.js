@@ -36,19 +36,20 @@ themeBtn.onclick = function () {
   }
 };
 // ===========================SCROLLREVEAL ANIMATION=======================================
-const sr = ScrollReveal({
-  distance: "80px",
-  duration: 2500,
-  delay: 200,
-  reset: true,
-});
+// Fungsi untuk mengganti nilai data-aos pada elemen
+function changeAOSAnimation() {
+  const screenWidth = window.innerWidth;
 
-sr.reveal(".home-container .left", { origin: "top" });
-sr.reveal(".home-container .right", { origin: "left" });
-sr.reveal(".about-container .right", { origin: "top" });
-sr.reveal(".about-container .left", { origin: "left" });
-sr.reveal(".services-container", { origin: "bottom" });
-sr.reveal(".portfolio-container", { origin: "left" });
-sr.reveal(".portfolio-buttons", { origin: "top" });
-sr.reveal(".contact-content", { origin: "top" });
-sr.reveal(".copyright", { origin: "bottom" });
+  // Cek jika lebar layar kurang dari 550px
+  if (screenWidth < 550) {
+    // Ubah data-aos menjadi "fade-up" pada elemen dengan data-aos="fade-right" dan "fade-left"
+    const elementsToChange = document.querySelectorAll('[data-aos="fade-right"]', '[data-aos="fade-left"]');
+    elementsToChange.forEach((element) => {
+      element.setAttribute("data-aos", "fade-up");
+    });
+  }
+}
+
+// Panggil fungsi ketika halaman dimuat dan saat ukuran layar berubah
+window.addEventListener("load", changeAOSAnimation);
+window.addEventListener("resize", changeAOSAnimation);
