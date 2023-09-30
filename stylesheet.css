@@ -17,6 +17,7 @@
   --color-bg: #e0e0e0;
   --color-text: #212121;
   --color-tertiary: #1acfb4;
+  --color-main: #50d2a0;
 
   --shadow: 6px 6px 12px #bababa, -6px -6px 12px #ffffff;
   --inner-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
@@ -38,6 +39,7 @@ body.active {
   --color-text: #e0e0e0;
   --color-bg: #212121;
   --color-tertiary: #ffc517;
+  --color-main: #f53394;
 
   --shadow: 0.5rem 0.5rem 1rem #111, -0.5rem -0.5rem 1rem #333;
   --inner-shadow: inset 0.5rem 0.5rem 1rem #111, inset -0.5rem -0.5rem 1rem #333;
@@ -257,6 +259,14 @@ nav.scrolling {
   font-size: 3.5rem;
   color: var(--color-tertiary);
 }
+.home .left h3 span.a {
+  color: var(--color-main);
+  font-size: 1.5rem;
+}
+.home .left h3 span.animate {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
 .home .left p {
   padding: 1.6rem 0;
   color: var(--color-text);
@@ -325,9 +335,13 @@ nav.scrolling {
 }
 .about .right > h3 {
   font-size: 1.3rem;
-  color: var(--color-tertiary);
 }
-.about .right > h3 span {
+.about .right > h3 span.web {
+  color: var(--color-main);
+  font-size: 1.3rem;
+}
+.about .right > h3 span.name {
+  color: var(--color-tertiary);
   font-size: 1.3rem;
 }
 .about .right > p {

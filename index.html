@@ -29,14 +29,14 @@
     </nav>
 
     <!-- =========================
-                HOME
+                BERANDA
       ============================ -->
     <section class="home" id="home">
       <div class="container home-container">
         <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
           <h4>Heloo....</h4>
           <h1>Saya <span>Naufal Rasyid</span></h1>
-          <h3>Seorang Web Developer</h3>
+          <h3><span class="a">Seorang</span> <span class="animate"></span></h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores doloremque amet tenetur voluptatum eum, impedit facere nobis dolor sit alias quia iure.</p>
           <button class="btn overlay" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
             <span>Hubungi Saya</span>
@@ -57,7 +57,7 @@
     </section>
 
     <!-- =========================
-                ABOUT
+                TENTANG SAYA
       ============================ -->
     <section class="about" id="about">
       <div class="container about-container">
@@ -68,7 +68,7 @@
           <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <h2>Tentang <span>Saya</span></h2>
           </div>
-          <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Saya <span>Naufal Rasyid</span> Seorang Website Developer</h3>
+          <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Saya <span class="name">Naufal Rasyid</span> Seorang <span class="web"> Web Developer</span></h3>
           <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore magnam sapiente unde eos dignissimos cumque, ipsum pariatur quibusdam, eum natus eligendi.
           </p>
@@ -140,12 +140,12 @@
       ============================ -->
     <section class="services" id="services">
       <div class="title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-        <h2>Hobi <span>saya</span></h2>
+        <h2>Hobi <span>Saya</span></h2>
       </div>
       <div class="container services-container">
         <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <div class="content">
-            <i class="ri-html5-fill"></i>
+            <i class="ri-code-s-slash-line"></i>
             <h4>Web Development</h4>
             <button class="btn">Book Service</button>
           </div>
@@ -159,13 +159,6 @@
         </div>
         <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <div class="content">
-            <i class="ri-stack-fill"></i>
-            <h4>Full Stack</h4>
-            <button class="btn">Book Service</button>
-          </div>
-        </div>
-        <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-          <div class="content">
             <i class="ri-android-fill"></i>
             <h4>App Development</h4>
             <button class="btn">Book Service</button>
@@ -173,15 +166,22 @@
         </div>
         <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <div class="content">
-            <i class="ri-bug-fill"></i>
-            <h4>Bug Fixing</h4>
+            <i class="ri-football-line"></i>
+            <h4>Sepak Bola</h4>
             <button class="btn">Book Service</button>
           </div>
         </div>
         <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <div class="content">
-            <i class="ri-store-2-fill"></i>
-            <h4>Digital Marketing</h4>
+            <i class="ri-headphone-fill"></i>
+            <h4>Mendengarkan Musik</h4>
+            <button class="btn">Book Service</button>
+          </div>
+        </div>
+        <div class="box overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          <div class="content">
+            <i class="ri-gamepad-line"></i>
+            <h4>Bermain Game</h4>
             <button class="btn">Book Service</button>
           </div>
         </div>
@@ -320,6 +320,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed(".animate", {
+        strings: ["Web Developer.", "Gamers.", "Web Designer."],
+        typeSpeed: 40,
+        loop: true,
+        backSpeed: 40,
+      });
     </script>
   </body>
 </html>
