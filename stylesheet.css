@@ -273,6 +273,7 @@ nav.scrolling {
 }
 .home .left .btn {
   padding: 1rem 3rem;
+  margin-top: 20px;
 }
 .home .social-icons i {
   height: 5rem;
@@ -346,6 +347,7 @@ nav.scrolling {
 }
 .about .right > p {
   margin: 0.5rem 0 2rem;
+  font-size: 15px;
 }
 .about .right .btn {
   padding: 1rem 2rem;
@@ -702,6 +704,12 @@ svg {
   -o-border-radius: 3rem;
 }
 .contact-form .btn span {
+  font-weight: 900;
+  font-size: 96%;
+  letter-spacing: 0.05rem;
+}
+.contact-form .btn span:hover {
+  color: var(--color-tertiary);
   font-weight: 900;
   font-size: 96%;
   letter-spacing: 0.05rem;
