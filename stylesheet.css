@@ -568,6 +568,7 @@ svg {
 .portfolio-container .tab-content .image {
   position: relative;
   overflow: hidden;
+  height: 200px;
   border-radius: 0.5rem;
   transition: var(--transition);
   -webkit-border-radius: 0.5rem;
@@ -606,10 +607,10 @@ svg {
   0% {
     transform: translateY(200px);
     transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    -o-transform: translateY(200px);
   }
 }
 .portfolio .btn {
@@ -625,15 +626,41 @@ svg {
   -ms-transform: scale(3, 3);
   -o-transform: scale(3, 3);
 }
-/* .tab-content:hover img:not(:hover) {
-  filter: blur(10px);
-  transform: scale(0.9, 0.9);
-  -webkit-filter: blur(10px);
-  -webkit-transform: scale(0.9, 0.9);
-  -moz-transform: scale(0.9, 0.9);
-  -ms-transform: scale(0.9, 0.9);
-  -o-transform: scale(0.9, 0.9);
-} */
+/* CSS untuk lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  text-align: center;
+}
+
+.lightbox img {
+  max-height: 450px;
+  max-width: 650px;
+  border-radius: 0.5rem;
+  margin: 100px auto;
+  display: block;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* Tombol penutup lightbox */
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* ============================================= 
                       CONTACT
 ================================================ */

@@ -53,3 +53,24 @@ function changeAOSAnimation() {
 // Panggil fungsi ketika halaman dimuat dan saat ukuran layar berubah
 window.addEventListener("load", changeAOSAnimation);
 window.addEventListener("resize", changeAOSAnimation);
+// ===========================ANIMASI LIGHTBOX=======================================
+function openLightbox(imageSrc) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  lightboxImage.src = imageSrc;
+  lightbox.style.display = "block";
+}
+
+// Fungsi untuk menutup lightbox
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
+}
+
+const images = document.querySelectorAll(".image");
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    const imgSrc = image.querySelector("img").src;
+    openLightbox(imgSrc);
+  });
+});
