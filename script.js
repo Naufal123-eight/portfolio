@@ -1,20 +1,18 @@
 // ===========================RESPONSIVE NAVBAR=======================================
-const navList = document.querySelector(".navlist");
-const menuBtn = document.querySelector(".ri-menu-line");
+let navList = document.querySelector('.navlist');
+let menuBtn = document.querySelector('.ri-menu-line');
 
-menuBtn.onclick = function () {
-  navList.classList.toggle("active");
-  menuBtn.classList.toggle("ri-arrow-up-double-line");
+menuBtn.onclick = () => {
+  navList.classList.toggle('active');
+  menuBtn.classList.toggle('ri-arrow-up-double-line');
 };
 // ===========================FIXED NAVBAR=======================================
 window.addEventListener("scroll", () => {
   document.querySelector("nav").classList.toggle("scrolling", scrollY > 50);
 });
 // ===========================PORTFOLIO=======================================
-
 var portfolioTabs = document.getElementsByClassName("portfolio-tab");
 var tabContents = document.getElementsByClassName("tab-content");
-
 function tabOpen(x) {
   for (portfolioTab of portfolioTabs) {
     portfolioTab.classList.remove("active");

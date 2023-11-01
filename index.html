@@ -19,6 +19,7 @@
           <li><a href="#about">Tentang Saya</a></li>
           <li><a href="#services">Hobi</a></li>
           <li><a href="#portofolio">Aktivitas</a></li>
+          <li><a href="#responsif">Responsif</a></li>
           <li><a href="#contact">Hubungi Saya</a></li>
         </ul>
         <div class="nav-icons">
@@ -67,7 +68,7 @@
           <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <h2>Tentang <span>Saya</span></h2>
           </div>
-          <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Perkenalkan Saya <span class="name">Naufal Rasyid Irfan Alfadil</span></h3>
+          <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Perkenalkan Saya <span class="myname">Naufal Rasyid Irfan Alfadil</span></h3>
           <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             Saya adalah seorang pengembang web yang bersemangat dan siswa di SMK RAFLESIA. Saya memulai perjalanan saya dalam dunia pemrograman dan pengembangan web beberapa tahun yang lalu, dan sejak itu, saya telah menjelajahi dan
             mendalami berbagai aspek teknologi web. Ketertarikan saya terhadap dunia web development telah menginspirasi saya untuk terus belajar dan berkembang.
@@ -237,6 +238,28 @@
       </div>
     </section>
     <!-- =========================
+                3D ANIMATION
+      ============================ -->
+      <section class="responsif" id="responsif">
+        <div class="title" data-aos="fade-right" data-aos-duration="1000">
+          <h2>Responsif <span>Website</span></h2>
+        </div>
+        <div class="container responsif-container">
+          <div class="box-overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <h4 class="name">LAPTOP</h4>
+            <img src="img/asset/3d/2.png" alt="" class="device-img">
+        </div>
+        <div class="box-overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <h4 class="name">TABLET</h4>
+            <img src="img/asset/3d/1.png" alt="" class="device-img">
+        </div>
+        <div class="box-overlay" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+            <h4 class="name">PHONE</h4>
+            <img src="img/asset/3d/3.png" alt="" class="device-img">
+        </div>
+        </div>
+      </section>
+    <!-- =========================
                 KONTAK
       ============================ -->
     <section class="contact" id="contact">
@@ -305,6 +328,9 @@
           <a href="https://www.instagram.com/nflx18_/" target="_blank"><i class="ri-instagram-line"></i></a>
           <a href="https://github.com/Naufal123-eight?tab=repositories" target="_blank"><i class="ri-github-line"></i></a>
         </div>
+        <div class="copy">
+          <p>Inspiration <i class="ri-heart-fill"></i> | By<a href="">CodeAtUsman</a></p>
+        </div>
       </div>
     </footer>
     <!-- Script Js -->
@@ -324,6 +350,16 @@
         loop: true,
         backSpeed: 40,
       });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".box-overlay"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".your-element"));
     </script>
   </body>
 </html>
