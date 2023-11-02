@@ -881,7 +881,7 @@ svg {
   margin-top: 1.8rem;
 }
 .copy p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .copy p i {
   color: red;
@@ -914,6 +914,10 @@ svg {
     -moz-transition: var(--transition);
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
 }
   .navlist.active {
     top: 4rem;
